@@ -16,6 +16,9 @@ li {
     display: inline-block;
     margin-right: .5em;
 }
+img {
+    max-width: 100%;
+}
 
 
 
@@ -26,6 +29,21 @@ li {
 }
 .row {
     display: flex;
+}
+section {
+    padding: 3rem 0;
+}
+.badge {
+    font-size: .8rem;
+    font-weight: bold;
+    padding: .5em;
+    color: #fff;
+}
+.badge-price {
+    background-color: red;
+}
+.badge-sostenibilita {
+background-color: green;
 }
 
 
@@ -52,6 +70,54 @@ header .logo > img {
 
 
 /* MAIN */
+main .row {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    flex: 1 1 30%;
+
+    /* DEBUG */
+    /* width: calc((100% - 2rem) / 3); */
+}
+.card-image {
+    position: relative;
+}
+.card-image .img-secondary {
+    display: none;
+}
+.card:hover .img-secondary {
+    display: inline-block;
+}
+.card:hover .img-primary {
+    display: none;
+}
+.badges {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+}
+.favourite {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    background-color: #fff;
+    padding: 1rem;
+}
+.product-brand {
+    font-size: .8rem;
+}
+.product-name {
+    font-weight: bold;
+}
+.product-price {
+    font-size: .8rem;
+}
+.price-new {
+    font-weight: bold;
+    color: red;
+}
+
 
 
 
